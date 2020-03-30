@@ -136,11 +136,11 @@ friends: [
 valine_comment:
   enable: true
   # app_id
-  leancloud_appid: EIHRtUldrXYDbDunVD0lFw7b-gzGzoHsz
+  leancloud_appid: lF96blsgYuFyNjw0e6UR7rSU-gzGzoHsz
   # app_key
-  leancloud_appkey: rC3dXJmRlHoCE8duR7ml0mHS
+  leancloud_appkey: GJQfUXbt8KepgMorVOwywRg1
   # placeholde
-  placeholder: "我见过凌晨四点的广州，也曾在七点拥抱她入眠"
+  placeholder: ""
   # verify
   verify: true #验证码，verify和notify这两个最好就别动了 
   # notify
