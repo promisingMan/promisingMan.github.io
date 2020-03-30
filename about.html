@@ -1,0 +1,50 @@
+---
+layout: page
+title: "About"
+description: "你是我的梦想"
+header-img: "img/about-bg.jpg"
+multilingual: true
+---
+
+{% include multilingual-sel.html %}
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
+
+    {% if site.valine_comment.enable %}
+    <hr style="visibility: hidden;">
+                <!-- valine 评论框 start -->
+                <span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
+                    <em class="post-meta-item-text">阅读量 </em>
+                    <i class="leancloud-visitors-count"></i>
+                </span> 
+                <div id="comment" style="font-size: 16px;text-align: left;">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+                <script>
+                new Valine({
+                    el: '#comments',
+                    notify: '{{ site.valine_comment.notify }}',
+                    verify: '{{ site.valine_comment.verify }}',
+                    app_id: '{{ site.valine_comment.leancloud_appid }}',   //这里变量的取值在网站配置文件里_config.yml
+                    app_key: '{{ site.valine_comment.leancloud_appkey }}', //这里变量的取值在网站配置文件里_config.yml
+                    placeholder:'{{ site.valine_comment.placeholder }}',    //这里变量的取值在网站配置文件里_config.yml
+                    visitor: true,
+                    avatar:'' // (''/mp/identicon/monsterid/wavatar/robohash/retro/hide)
+                     });
+                     console.log(new Valine())
+                </script>
+                <!-- valine 评论框 end -->
+ {% endif %}
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>
