@@ -75,7 +75,7 @@ ga_domain: zengjia.ltd
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "see the world with my lover"
+sidebar-about-description: "See the world with my lover"
 sidebar-avatar: /img/lebron.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
