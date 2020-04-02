@@ -148,4 +148,3 @@ valine_comment:
   verify: true #验证码，verify和notify这两个最好就别动了 
   # notify
   notify: true #评论回复提醒
-theme: jekyll-theme-cayman
