@@ -113,7 +113,7 @@ valine_comment:
   # app_key
   leancloud_appkey: GJQfUXbt8KepgMorVOwywRg1
   # placeholde
-  placeholder: ""
+  placeholder: "快来评论吧!"
   # verify
   verify: true #验证码，verify和notify这两个最好就别动了
   # notify
